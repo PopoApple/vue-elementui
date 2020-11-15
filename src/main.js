@@ -7,7 +7,9 @@ import VueRouter from 'vue-router'
 //import Index from './views/TreeSelect'
 //import Index from './views/VCharts'
 //import Index from './views/Antv'
-import Index from './views/Scrollbar'
+//import Index from './views/Scrollbar'
+import Index from './views/CommonStyles'
+import vars from '@/assets/vars.scss'
 import {
   Pagination,
   Dialog,
@@ -174,7 +176,7 @@ Vue.prototype.$message = Message;
 Vue.use(VueRouter)
 
 Vue.config.productionTip = false
-
+Vue.prototype.$styleVars = vars
 const routes = [
   { path: '/', component: Index },
 ]

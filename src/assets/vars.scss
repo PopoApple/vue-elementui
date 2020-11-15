@@ -1,0 +1,8 @@
+$color-danger: #e99;
+$color-success: rgb(177, 238, 153);
+$color-warning: rgb(253, 243, 104);
+:export {
+    colorDanger: $color-danger;
+    colorSuccess: $color-success;
+    colorWarning: $color-warning;
+  }
