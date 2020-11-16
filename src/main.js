@@ -8,7 +8,9 @@ import VueRouter from 'vue-router'
 //import Index from './views/VCharts'
 //import Index from './views/Antv'
 //import Index from './views/Scrollbar'
-import Index from './views/CommonStyles'
+//import Index from './views/CommonStyles'
+
+import Index from './views/Tree'
 import vars from '@/assets/vars.scss'
 import {
   Pagination,
