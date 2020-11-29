@@ -9,9 +9,12 @@ import VueRouter from 'vue-router'
 //import Index from './views/Antv'
 //import Index from './views/Scrollbar'
 //import Index from './views/CommonStyles'
-
-import Index from './views/Tree'
+//import Index from './views/Tree'
+const ElementVant = () => import('./views/ElementVant')
+import Index from './views/Index'
 import vars from '@/assets/vars.scss'
+import { Button as VanButton } from 'vant'
+
 import {
   Pagination,
   Dialog,
@@ -167,6 +170,9 @@ Vue.use(CascaderPanel);
 
 Vue.use(Loading.directive);
 
+
+Vue.use(VanButton);
+
 Vue.prototype.$loading = Loading.service;
 Vue.prototype.$msgbox = MessageBox;
 Vue.prototype.$alert = MessageBox.alert;
@@ -175,12 +181,13 @@ Vue.prototype.$prompt = MessageBox.prompt;
 Vue.prototype.$notify = Notification;
 Vue.prototype.$message = Message;
 
-Vue.use(VueRouter)
+ Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 Vue.prototype.$styleVars = vars
 const routes = [
   { path: '/', component: Index },
+  { path: '/ElementVant', component: ElementVant },
 ]
 
 const router = new VueRouter({
